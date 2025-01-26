@@ -1,0 +1,289 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('mountains.png') no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+/* Навигационное меню */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+   margin-bottom: 10px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 100px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Аватар */
+.header__avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
+}
+
+/* Секции */
+.section {
+    min-height: 40vh;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section:nth-child(even) {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section h1 {
+    margin-bottom: 60px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* .section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 20 auto 20px auto;
+    color: #666;
+}
+
+.description-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    justify-content: center;
+}
+*/
+
+.section p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 20px auto;
+            color: #666;
+        }
+
+        .description-container {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .show-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .show-button:hover {
+            background-color: #0056b3;
+        }
+
+        .show-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    background-color: #fff;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.card-icon img {
+    max-width: 50px;
+    height: auto;
+    text-align: left;
+}
+
+.card-content {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card-icon img {
+        max-width: 80px;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-text {
+        font-size: 0.95em;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-icon {
+        padding: 15px;
+    }
+
+    .card-icon img {
+        max-width: 60px;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+}
+
+/* Социальные ссылки */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 20px 20px 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .section h1 {
+        font-size: 36px;
+    }
+
+    .section p, .section ul {
+        font-size: 16px;
+    }
+
+    .project h2 {
+        font-size: 28px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
+}
