@@ -19,57 +19,39 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
+    padding: 10px 0;
+    margin-bottom: 10px;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-nav .menu {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    transition: max-height 0.3s ease-out;
 }
 
-nav .menu li {
-    margin: 0 15px;
+nav ul li {
+    margin: 0 100px;
 }
 
-nav .menu li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
-nav .menu li a:hover {
+nav ul li a:hover {
     color: #ffcc00;
-}
-
-/* Кнопка меню (бургер) */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: all 0.3s ease;
 }
 
 /* Аватар */
 .header__avatar {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 20%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
 }
 
 /* Секции */
@@ -91,30 +73,6 @@ nav .menu li a:hover {
 
 .section h2 {
     margin-top: 10px;
-    font-size: 38px;
-    text-align: center;
-}
-
-.section p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 20px auto;
-    color: #666;
-}
-
-.description-container {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-}
-
 .hidden-text {
     display: none;
     margin-top: 10px;
@@ -139,12 +97,14 @@ nav .menu li a:hover {
     cursor: not-allowed;
 }
 
+/* Контейнер карточек */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/* Карточки */
 .card {
     width: 30%;
     margin-bottom: 20px;
@@ -208,8 +168,8 @@ nav .menu li a:hover {
 .social-links a:hover {
     color: #ffcc00;
 }
-
-/* Адаптация для планшетов */
+    
+/* Адаптация для планшетов и мобильных устройств */
 @media (max-width: 992px) {
     .card {
         width: 45%;
@@ -226,6 +186,12 @@ nav .menu li a:hover {
     .card-text {
         font-size: 0.95em;
     }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 
     nav ul {
         flex-direction: column;
@@ -235,44 +201,28 @@ nav .menu li a:hover {
     nav ul li {
         margin: 10px 0;
     }
-}
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
+    .header__avatar {
+        width: 30%;
     }
 
-    .card-icon {
-        padding: 15px;
+    .section {
+        padding: 20px;
     }
 
-    .card-icon img {
-        max-width: 60px;
+    .section h1 {
+        font-size: 32px;
     }
 
-    .card-content {
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .description-container {
         padding: 10px;
-    }
-
-    .card-title {
-        font-size: 1em;
-    }
-
-    /* Стили для свернутого меню */
-    nav .menu {
-        flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-    }
-
-    nav .menu.show {
-        max-height: 500px; /* Достаточно большое значение для отображения меню */
-    }
-
-    .menu-toggle {
-        display: flex;
     }
 }
