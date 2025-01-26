@@ -73,25 +73,6 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    margin-top: 10px;
-.hidden-text {
-    display: none;
-    margin-top: 10px;
-}
-
-.show-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 4px;
-}
-
-.show-button:hover {
-    background-color: #0056b3;
-}
 
 .show-button:disabled {
     background-color: #cccccc;
@@ -204,7 +185,7 @@ nav ul li a:hover {
     }
 
     .header__avatar {
-        width: 45%;
+        width: 30%;
     }
 
     .section {
@@ -212,17 +193,21 @@ nav ul li a:hover {
     }
 
     .section h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .section h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .section p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
+    .description-container {
+        padding: 10px;
+    }
+}
     .description-container {
         padding: 15px;
     }
