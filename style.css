@@ -235,7 +235,7 @@ nav ul li a:hover {
     }
 
 /* Адаптация для мобильных устройств */
-@media (max-width: 600px) {
+@media (max-width: 680px) {
 
     .section {
     padding-top: 70px;
