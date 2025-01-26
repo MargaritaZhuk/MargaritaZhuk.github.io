@@ -73,7 +73,7 @@ nav ul li a:hover {
 
 .section {
     min-height: 40vh;
-    padding: 20px;
+    padding: 40px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -81,19 +81,19 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.section h1, .section-main h1 {
+.section h1 {
     margin-bottom: 60px;
     font-size: 48px;
     text-align: center;
 }
 
-.section-main h2 {
+.section h2 {
     margin-top: 10px;
     font-size: 38px;
     text-align: center;
 }
 
-.section p, .section-main p {
+.section p {
     font-size: 18px;
     line-height: 1.6;
     max-width: 1200px;
@@ -238,8 +238,8 @@ nav ul li a:hover {
 /* Адаптация для мобильных устройств */
 @media (max-width: 600px) {
 
-    .section-main {
-    padding: 50px;
+    .section {
+    padding: 70px;
     }
     
     .header__avatar {
