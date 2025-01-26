@@ -242,7 +242,7 @@ nav ul li a:hover {
     }
      .header__avatar {
      width: 45%;
-     margin-top: 30px;
+     padding-top: 70px;
     }
     .card {
         width: 100%;
