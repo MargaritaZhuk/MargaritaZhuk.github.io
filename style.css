@@ -271,16 +271,16 @@ nav ul li a:hover {
         text-align: center;
     }
     
-    .section h1, .section-main h1 {
+    .section h1 {
         font-size: 28px;
     }
 
-    .section p, .section-main p {
+    .section p {
         font-size: 16px;
         text-align: center;
     }
 
-    .section-main h2 {
+    .section h2 {
         font-size: 20px;
     }
 
