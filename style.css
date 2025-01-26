@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 /* Секции */
-.section {
+.section-main {
     min-height: 40vh;
     padding: 50px;
     background: rgba(0, 0, 0, 0.5);
@@ -80,19 +80,19 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.section h1 {
+.section h1, .section-main h1 {
     margin-bottom: 60px;
     font-size: 48px;
     text-align: center;
 }
 
-.section h2 {
+.section-main h2 {
     margin-top: 10px;
     font-size: 38px;
     text-align: center;
 }
 
-.section p {
+.section p, .section-main p {
     font-size: 18px;
     line-height: 1.6;
     max-width: 1200px;
@@ -237,12 +237,12 @@ nav ul li a:hover {
 /* Адаптация для мобильных устройств */
 @media (max-width: 600px) {
 
-    .section {
-    padding: 10px;
+    .section-main {
+    padding: 50px;
     }
-     .header__avatar {
+    
+    .header__avatar {
      width: 45%;
-     padding-top: 70px;
     }
     .card {
         width: 100%;
@@ -269,16 +269,16 @@ nav ul li a:hover {
         text-align: center;
     }
     
-    .section h1 {
+    .section h1, .section-main h1 {
         font-size: 28px;
     }
 
-    .section p {
+    .section p, .section-main p {
         font-size: 16px;
         text-align: center;
     }
 
-    .section h2 {
+    .section-main h2 {
         font-size: 20px;
     }
 
