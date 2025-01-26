@@ -73,7 +73,7 @@ nav ul li a:hover {
 
 .section {
     min-height: 40vh;
-    padding: 40px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -239,12 +239,14 @@ nav ul li a:hover {
 @media (max-width: 600px) {
 
     .section {
-    padding: 70px;
+    padding-top: 70px;
+    padding-bottom:30px;
     }
     
     .header__avatar {
      width: 45%;
     }
+    
     .card {
         width: 100%;
     }
@@ -265,7 +267,6 @@ nav ul li a:hover {
     }
 
     .card-title {
-        text-align: center;
         font-size: 1em;
         text-align: center;
     }
