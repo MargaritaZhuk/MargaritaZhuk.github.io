@@ -82,7 +82,7 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.section:nth-child(even) {
+.section:nth-child(even), .section-main:nth-child(even){
     background: rgba(0, 0, 0, 0.5);
 }
 
