@@ -13,7 +13,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
 /* Навигационное меню */
 nav {
     position: fixed;
@@ -46,13 +45,28 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+/* Кнопка меню (бургер) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
 /* Аватар */
 .header__avatar {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 20%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
 }
 
 /* Секции */
@@ -73,20 +87,61 @@ nav ul li a:hover {
 }
 
 .section h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #666;
+}
+
+.description-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+}
+
+.show-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.show-button:hover {
+    background-color: #0056b3;
+}
 
 .show-button:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
 
-/* Контейнер карточек */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Карточки */
 .card {
     width: 30%;
     margin-bottom: 20px;
@@ -150,8 +205,8 @@ nav ul li a:hover {
 .social-links a:hover {
     color: #ffcc00;
 }
-    
-/* Адаптация для планшетов и мобильных устройств */
+
+/* Адаптация для планшетов */
 @media (max-width: 992px) {
     .card {
         width: 45%;
@@ -168,12 +223,6 @@ nav ul li a:hover {
     .card-text {
         font-size: 0.95em;
     }
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
 
     nav ul {
         flex-direction: column;
@@ -183,29 +232,45 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0;
     }
+}
 
-    .header__avatar {
-        width: 30%;
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
     }
 
-    .section {
-        padding: 20px;
+    .card-icon {
+        padding: 15px;
     }
 
-    .section h1 {
-        font-size: 32px;
+    .card-icon img {
+        max-width: 60px;
     }
 
-    .section h2 {
-        font-size: 24px;
-    }
-
-    .section p {
-        font-size: 16px;
-    }
-
-    .description-container {
+    .card-content {
         padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+
+    /* Стили для свернутого меню */
+    nav .menu {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    nav .menu.show {
+        max-height: 500px; /* Достаточно большое значение для отображения меню */
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 }
     .description-container {
