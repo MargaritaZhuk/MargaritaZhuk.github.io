@@ -18,6 +18,11 @@
             <li><a href="#instruments">Навыки и стек</a></li>
             <li><a href="#contacts">Контакты</a></li>
         </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
 
     <!-- Первый блок: Обо Мне -->
@@ -165,6 +170,15 @@
         this.textContent = 'Мой опыт';
     });
 </script>
+<script>    document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+});
+    </script>
 
 </body>
 </html>
