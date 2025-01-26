@@ -255,6 +255,22 @@ nav ul li a:hover {
     .card-title {
         font-size: 1em;
     }
+    
+    .section h1 {
+        font-size: 36px;
+    }
+
+    .section p, .section ul {
+        font-size: 16px;
+    }
+
+    .project h2 {
+        font-size: 28px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
 
     /* Стили для свернутого меню */
     nav .menu {
@@ -266,7 +282,7 @@ nav ul li a:hover {
     }
 
     nav .menu.show {
-        max-height: 500px; /* Достаточно большое значение для отображения меню */
+        max-height: 200px; /* Достаточно большое значение для отображения меню */
     }
 
     .menu-toggle {
