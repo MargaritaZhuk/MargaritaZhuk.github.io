@@ -233,28 +233,6 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0;
     }
-    
-    /* Стили для свернутого меню */
-    nav .menu {
-        flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-    }
-
-    nav .menu.show {
-        max-height: 100px;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
-    .description-container {
-        padding: 15px;
-    }
-}
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 600px) {
