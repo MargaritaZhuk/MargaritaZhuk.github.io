@@ -20,7 +20,7 @@ nav {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     padding: 10px 0;
-   margin-bottom: 10px;
+    margin-bottom: 40px;
     z-index: 1000;
 }
 
@@ -67,7 +67,6 @@ nav ul li a:hover {
   border-radius: 50%;
   width: 20%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящийся контур */
-  padding-top: 50px
 }
 
 /* Секции */
